@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>signup</title>
+</head>
+<body>
+    <main>
+        <div class="container vh-100 d-flex justify-content-center align-items-center ">
+            <div class="row flex-grow-1 justify-content-center">
+                <div class="col-md-4">
+                    <div class="login-frame bg-white bg-opacity-25 text-center p-3 rounded-3 border border-1 border-white" >
+                        <h1 class="text-white my-4 fs-2">Signup</h1>
+                        <div class="login-field position-relative">
+                            <div class="user position-relative">
+                                <input type="text" placeholder="Username" id="name" class="in-1 w-100 my-f mx-auto py-1 px-3 rounded-5 border-0 ">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="danger bg-danger text-white d-none" id="username-validate">
+                                <ul class="p-0 m-0 list-unstyled">
+                                    <li>username must start with capital letter</li>
+                                    <li>username at least 3 characters</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="email position-relative">
+                                <input type="text" placeholder="Email" id="email" class="in-1 w-100 my-f mx-auto py-1 px-3 rounded-5 border-0 ">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="danger bg-danger text-white d-none" id="email-validate">
+                                <ul class="p-0 m-0 list-unstyled">
+                                    <li>email must contain @</li>
+                                </ul>
+                            </div>
+                            <div class="pass position-relative">
+                                <input type="password" placeholder="Password" id="password" class="in-1 w-100 my-f mx-auto py-1 px-3 rounded-5 border-0 ">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <div class="danger bg-danger text-white d-none" id="password-validate">
+                                <ul class="p-0 m-0 list-unstyled">
+                                    <li>must contain upper case and digits</li>
+                                </ul>
+                            </div>
+                            <div class=" bg-success text-white d-none" id="success-msg">
+                                <ul class="p-0 m-0 list-unstyled">
+                                    <li>success</li>
+                                </ul>
+                            </div>
+                            <div class=" bg-danger text-white d-none" id="user-exists">
+                                <ul class="p-0 m-0 list-unstyled">
+                                    <li>user exist</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button id="signup" class="btn btn-success my-3 px-f rounded-5">Signup</button>
+                        <div class="acc my-2 text-white"><p>I'have an account <a href="index.html">Login?</a></p></div>
+                    </div>
+                </div>
+            </div>
+                    
+            </div>
+    </main>
+</body>
+<script src="assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="assets/JS/signup.js"></script>
+</html>
